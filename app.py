@@ -16,8 +16,8 @@ def obter_urls_streaming(url):
                 resolucoes.add(stream.resolution)
                 tem_audio = "sim" if stream.includes_audio_track else "não"
                 url_streaming = stream.url
-                url_streaming_encurtada = encurtar_url(url_streaming)
-                urls_e_resolucoes.append({"resolucao": stream.resolution, "url_streaming_encurtada": url_streaming_encurtada, "audio": tem_audio})
+                url_streaming = encurtar_url(url_streaming)
+                urls_e_resolucoes.append({"resolucao": stream.resolution, "url_streaming": url_streaming, "audio": tem_audio})
 
         return urls_e_resolucoes
     except Exception as e:
