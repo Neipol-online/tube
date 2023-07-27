@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "api/obter_resolucoes": {
+      "runtime": "vercel-python@latest",
+      "memory": 128
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/obter_resolucoes",
+      "dest": "api/obter_resolucoes"
+    }
+  ]
+}
