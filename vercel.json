@@ -2,6 +2,7 @@
   "functions": {
     "api": {
       "runtime": "vercel-python@3.11.4"
+      "entrypoint": "tube/app.py"
     }
   },
   "routes": [
