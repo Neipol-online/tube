@@ -1,14 +1,11 @@
 {
   "functions": {
-    "api/obter_resolucoes": {
-      "runtime": "vercel-python@3.11.4",
-      "memory": 128
+    "api": {
+      "handler": "app.app",
+      "runtime": "vercel-python@3.11.4"
     }
   },
   "routes": [
-    {
-      "src": "/api/obter_resolucoes",
-      "dest": "api/obter_resolucoes"
-    }
+    { "src": "/api/obter_resolucoes", "dest": "api" }
   ]
 }
